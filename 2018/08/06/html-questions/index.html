@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="HTML 问题
+DOCTYPE有什么用？
+如何提供包含多种语言内容的页面？
+在设计开发多语言网站时，需要留心哪些事情？
+什么是data-属性？
+将 HTML5 看作成开放的网络平台，什么是 HTML5 的基本构件（building block）？
+请描述cookie、sessionStorage和l">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Html基础知识"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Hexo"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Html基础知识 - Hexo</title>
+
+    <!-- Tachyons Core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/front-map/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<!-- Main Content -->
+<!-- Banner -->
+<!-- Banner -->
+<div class="w-100 bg-1 ph5-ns ph3 text-light">
+    
+    <nav class="db dt-l w-100 mw8 center border-box pv3">
+        <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="/front-map/" title="Hexo">
+            <img src="http://www.codeblocq.com/assets/projects/hexo-theme-anodyne/assets/anodyne.svg" class="dib h3" alt="Hexo">
+        </a>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/front-map/" 
+                    title="Home">
+                    Home
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/front-map/archives" 
+                    title="Archives">
+                    Archives
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/front-map/tags" 
+                    title="Tags">
+                    Tags
+                </a>
+            
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="w-100 mw8 center vh-40 dt">
+        <div class="dtc v-mid white">
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Html基础知识</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2018-08-06</p>
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="relative w-100 mw8 center white dn dn-m db-ns">
+        <i class="header-icon fa fa-handshake-o"></i>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+    <div class="content">
+        <div class="mw8 center">
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
+                    <!-- Tags Vertical -->
+                    
+                        <div class="tags-container-vertical">
+                            <div class="tags-sub-container">
+                                <a class="fw3 ph1 dib" href="/front-map/tags/html/">#html</a> <a class="fw3 ph1 dib" href="/front-map/tags/js/">#js</a> <a class="fw3 ph1 dib" href="/front-map/tags/css/">#css</a>
+                            </div>
+                        </div>
+                    
+
+                    <!-- Main Post Content -->
+                    <h1 id="HTML-问题"><a href="#HTML-问题" class="headerlink" title="HTML 问题"></a>HTML 问题</h1><ul>
+<li><a href="#doctype有什么用"><code>DOCTYPE</code>有什么用？</a></li>
+<li><a href="#如何提供包含多种语言内容的页面">如何提供包含多种语言内容的页面？</a></li>
+<li><a href="#在设计开发多语言网站时需要留心哪些事情">在设计开发多语言网站时，需要留心哪些事情？</a></li>
+<li><a href="#什么是data-属性">什么是<code>data-</code>属性？</a></li>
+<li><a href="#将-html5-看作成开放的网络平台什么是-html5-的基本构件building-block">将 HTML5 看作成开放的网络平台，什么是 HTML5 的基本构件（building block）？</a></li>
+<li><a href="#请描述cookiesessionstorage和localstorage的区别">请描述<code>cookie</code>、<code>sessionStorage</code>和<code>localStorage</code>的区别。</a></li>
+<li><a href="#请描述scriptscript-async和script-defer的区别">请描述<code>&lt;script&gt;</code>、<code>&lt;script async&gt;</code>和<code>&lt;script defer&gt;</code>的区别。</a></li>
+<li><a href="#为什么最好把css的link标签放在headhead之间为什么最好把js的script标签恰好放在body之前有例外情况吗">为什么最好把 CSS 的<code>&lt;link&gt;</code>标签放在<code>&lt;head&gt;&lt;/head&gt;</code>之间？为什么最好把 JS 的<code>&lt;script&gt;</code>标签恰好放在<code>&lt;/body&gt;</code>之前，有例外情况吗？</a></li>
+<li><a href="#什么是渐进式渲染progressive-rendering">什么是渐进式渲染（progressive rendering）？</a></li>
+<li><a href="#为什么在img标签中使用srcset属性请描述浏览器遇到该属性后的处理过程">为什么在<code>&lt;img&gt;</code>标签中使用<code>srcset</code>属性？请描述浏览器遇到该属性后的处理过程。</a></li>
+<li><a href="#你有过使用不同模版语言的经历吗">你有过使用不同模版语言的经历吗？</a></li>
+</ul>
+<h3 id="DOCTYPE有什么用？"><a href="#DOCTYPE有什么用？" class="headerlink" title="DOCTYPE有什么用？"></a><code>DOCTYPE</code>有什么用？</h3><p><code>DOCTYPE</code>是“document type”的缩写。它是 HTML 中用来区分标准模式和<a href="https://quirks.spec.whatwg.org/#history" target="_blank" rel="noopener">怪异模式</a>的声明，用来告知浏览器使用标准模式渲染页面。</p>
+<p>从中获得的启发：在页面开始处添加<code>&lt;!DOCTYPE html&gt;</code>即可。</p>
+<h6 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="https://stackoverflow.com/questions/7695044/what-does-doctype-html-do" target="_blank" rel="noopener">https://stackoverflow.com/questions/7695044/what-does-doctype-html-do</a></li>
+<li><a href="https://www.w3.org/QA/Tips/Doctype" target="_blank" rel="noopener">https://www.w3.org/QA/Tips/Doctype</a></li>
+<li><a href="https://quirks.spec.whatwg.org/#history" target="_blank" rel="noopener">https://quirks.spec.whatwg.org/#history</a></li>
+</ul>
+<h3 id="如何提供包含多种语言内容的页面？"><a href="#如何提供包含多种语言内容的页面？" class="headerlink" title="如何提供包含多种语言内容的页面？"></a>如何提供包含多种语言内容的页面？</h3><p>这个问题有点问得含糊其辞，我认为这是在询问最常见的情况：如何提供包含多种语言内容的页面，并保证页面内容语言的一致性。</p>
+<p>当客户端向服务器发送 HTTP 请求时，通常会发送有关语言首选项的信息，比如使用<code>Accept-Language</code>请求头。如果替换语言存在，服务器可以利用该信息返回与之相匹配的 HTML 文档。返回的 HTML 文档还应在<code>&lt;html&gt;</code>标签中声明<code>lang</code>属性，比如<code>&lt;html lang=&quot;en&quot;&gt;...&lt;/html&gt;</code></p>
+<p>在后台中，HTML 将包含<code>i18n</code>占位符和待以替换的内容，这些按照不同语言，以 YML 或 JSON 格式存储。然后，服务器将动态生成指定语言内容的 HTML 页面。整个过程通常需要借助后台框架实现。</p>
+<h6 id="参考-1"><a href="#参考-1" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="https://www.w3.org/International/getting-started/language" target="_blank" rel="noopener">https://www.w3.org/International/getting-started/language</a></li>
+</ul>
+<h3 id="在设计开发多语言网站时，需要留心哪些事情？"><a href="#在设计开发多语言网站时，需要留心哪些事情？" class="headerlink" title="在设计开发多语言网站时，需要留心哪些事情？"></a>在设计开发多语言网站时，需要留心哪些事情？</h3><ul>
+<li>在 HTML 中使用<code>lang</code>属性。</li>
+<li>引导用户切换到自己的母语——让用户能够轻松地切换到自己的国家或语言，而不用麻烦。</li>
+<li>在图片中展示文本会阻碍网站规模增长——把文本放在图片中展示，仍然是一种非常流行的方式。这样做可以在所有终端上，都能显示出美观的非系统字体。然而，为了翻译图片中的文本，需要为每种语言单独创建对应的图片，这种做法很容易在图片数量不断增长的过程中失控。</li>
+<li>限制词语或句子的长度——网页内容在使用其他语言表述时，文字长度会发生变化。设计时，需要警惕文字长度溢出布局的问题，最好不要使用受文字长度影响较大的设计。比如标题、标签、按钮的设计，往往很受文字长度影响，这些设计中的文字与正文或评论部分不同，一般不可以自由换行。</li>
+<li>注意颜色的使用——颜色在不同的语言和文化中，意义和感受是不同的。设计时应该使用恰当的颜色。</li>
+<li>日期和货币的格式化——日期在不同的国家和地区，会以不同的方式显示。比如美国的日期格式是“May 31, 2012”，而在欧洲部分地区，日期格式是“31 May 2012”。</li>
+<li>注意语言阅读的方向——在英语中，文字是从左向右阅读的；而在传统日语中，文字是从右向左阅读的。</li>
+</ul>
+<h6 id="参考-2"><a href="#参考-2" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="https://www.quora.com/What-kind-of-things-one-should-be-wary-of-when-designing-or-developing-for-multilingual-sites" target="_blank" rel="noopener">https://www.quora.com/What-kind-of-things-one-should-be-wary-of-when-designing-or-developing-for-multilingual-sites</a></li>
+</ul>
+<h3 id="什么是data-属性？"><a href="#什么是data-属性？" class="headerlink" title="什么是data-属性？"></a>什么是<code>data-</code>属性？</h3><p>在 JavaScript 框架变得流行之前，前端开发者经常使用<code>data-</code>属性，把额外数据存储在 DOM 自身中。当时没有其他 Hack 手段（比如使用非标准属性或 DOM 上额外属性）。这样做是为了将自定义数据存储到页面或应用中，对此没有其他更适当的属性或元素。</p>
+<p>而现在，不鼓励使用<code>data-</code>属性。原因之一是，用户可以通过在浏览器中利用检查元素，轻松地修改属性值，借此修改数据。数据模型最好存储在 JavaScript 本身中，并利用框架提供的数据绑定，使之与 DOM 保持更新。</p>
+<h6 id="参考-3"><a href="#参考-3" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="http://html5doctor.com/html5-custom-data-attributes/" target="_blank" rel="noopener">http://html5doctor.com/html5-custom-data-attributes/</a></li>
+<li><a href="https://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes" target="_blank" rel="noopener">https://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes</a></li>
+</ul>
+<h3 id="将-HTML5-看作成开放的网络平台，什么是-HTML5-的基本构件（building-block）？"><a href="#将-HTML5-看作成开放的网络平台，什么是-HTML5-的基本构件（building-block）？" class="headerlink" title="将 HTML5 看作成开放的网络平台，什么是 HTML5 的基本构件（building block）？"></a>将 HTML5 看作成开放的网络平台，什么是 HTML5 的基本构件（building block）？</h3><ul>
+<li>语义 - 提供更准确地描述内容。</li>
+<li>连接 - 提供新的方式与服务器通信。</li>
+<li>离线和存储 - 允许网页在本地存储数据并有效地离线运行。</li>
+<li>多媒体 - 在 Open Web 中，视频和音频被视为一等公民（first-class citizens）。</li>
+<li>2D/3D 图形和特效 - 提供更多种演示选项。</li>
+<li>性能和集成 - 提供更快的访问速度和性能更好的计算机硬件。</li>
+<li>设备访问 - 允许使用各种输入、输出设备。</li>
+<li>外观 - 可以开发丰富的主题。</li>
+</ul>
+<h6 id="参考-4"><a href="#参考-4" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5</a></li>
+</ul>
+<h3 id="请描述cookie、sessionStorage和localStorage的区别。"><a href="#请描述cookie、sessionStorage和localStorage的区别。" class="headerlink" title="请描述cookie、sessionStorage和localStorage的区别。"></a>请描述<code>cookie</code>、<code>sessionStorage</code>和<code>localStorage</code>的区别。</h3><p>上面提到的技术名词，都是在客户端以键值对存储的存储机制，并且只能将值存储为字符串。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>cookie</code></th>
+<th><code>localStorage</code></th>
+<th><code>sessionStorage</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>由谁初始化</td>
+<td>客户端或服务器，服务器可以使用<code>Set-Cookie</code>请求头。</td>
+<td>客户端</td>
+<td>客户端</td>
+</tr>
+<tr>
+<td>过期时间</td>
+<td>手动设置</td>
+<td>永不过期</td>
+<td>当前页面关闭时</td>
+</tr>
+<tr>
+<td>在当前浏览器会话（browser sessions）中是否保持不变</td>
+<td>取决于是否设置了过期时间</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>是否随着每个 HTTP 请求发送给服务器</td>
+<td>是，Cookies 会通过<code>Cookie</code>请求头，自动发送给服务器</td>
+<td>否</td>
+<td>否</td>
+</tr>
+<tr>
+<td>容量（每个域名）</td>
+<td>4kb</td>
+<td>5MB</td>
+<td>5MB</td>
+</tr>
+<tr>
+<td>访问权限</td>
+<td>任意窗口</td>
+<td>任意窗口</td>
+<td>当前页面窗口</td>
+</tr>
+</tbody>
+</table>
+<h6 id="参考-5"><a href="#参考-5" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a></li>
+<li><a href="http://tutorial.techaltum.com/local-and-session-storage.html" target="_blank" rel="noopener">http://tutorial.techaltum.com/local-and-session-storage.html</a></li>
+</ul>
+<h3 id="请描述-lt-script-gt-、-lt-script-async-gt-和-lt-script-defer-gt-的区别。"><a href="#请描述-lt-script-gt-、-lt-script-async-gt-和-lt-script-defer-gt-的区别。" class="headerlink" title="请描述&lt;script&gt;、&lt;script async&gt;和&lt;script defer&gt;的区别。"></a>请描述<code>&lt;script&gt;</code>、<code>&lt;script async&gt;</code>和<code>&lt;script defer&gt;</code>的区别。</h3><ul>
+<li><code>&lt;script&gt;</code> - HTML 解析中断，脚本被提取并立即执行。执行结束后，HTML 解析继续。</li>
+<li><code>&lt;script async&gt;</code> - 脚本的提取、执行的过程与 HTML 解析过程并行，脚本执行完毕可能在 HTML 解析完毕之前。当脚本与页面上其他脚本独立时，可以使用<code>async</code>，比如用作页面统计分析。</li>
+<li><code>&lt;script defer&gt;</code> - 脚本仅提取过程与 HTML 解析过程并行，脚本的执行将在 HTML 解析完毕后进行。如果有多个含<code>defer</code>的脚本，脚本的执行顺序将按照在 document 中出现的位置，从上到下顺序执行。</li>
+</ul>
+<p>注意：没有<code>src</code>属性的脚本，<code>async</code>和<code>defer</code>属性会被忽略。</p>
+<h6 id="参考-6"><a href="#参考-6" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html" target="_blank" rel="noopener">http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html</a></li>
+<li><a href="https://stackoverflow.com/questions/10808109/script-tag-async-defer" target="_blank" rel="noopener">https://stackoverflow.com/questions/10808109/script-tag-async-defer</a></li>
+<li><a href="https://bitsofco.de/async-vs-defer/" target="_blank" rel="noopener">https://bitsofco.de/async-vs-defer/</a></li>
+</ul>
+<h3 id="为什么最好把-CSS-的-lt-link-gt-标签放在-lt-head-gt-lt-head-gt-之间？为什么最好把-JS-的-lt-script-gt-标签恰好放在-lt-body-gt-之前，有例外情况吗？"><a href="#为什么最好把-CSS-的-lt-link-gt-标签放在-lt-head-gt-lt-head-gt-之间？为什么最好把-JS-的-lt-script-gt-标签恰好放在-lt-body-gt-之前，有例外情况吗？" class="headerlink" title="为什么最好把 CSS 的&lt;link&gt;标签放在&lt;head&gt;&lt;/head&gt;之间？为什么最好把 JS 的&lt;script&gt;标签恰好放在&lt;/body&gt;之前，有例外情况吗？"></a>为什么最好把 CSS 的<code>&lt;link&gt;</code>标签放在<code>&lt;head&gt;&lt;/head&gt;</code>之间？为什么最好把 JS 的<code>&lt;script&gt;</code>标签恰好放在<code>&lt;/body&gt;</code>之前，有例外情况吗？</h3><p><strong>把<code>&lt;link&gt;</code>放在<code>&lt;head&gt;</code>中</strong></p>
+<p>把<code>&lt;link&gt;</code>标签放在<code>&lt;head&gt;&lt;/head&gt;</code>之间是规范要求的内容。此外，这种做法可以让页面逐步呈现，提高了用户体验。将样式表放在文档底部附近，会使许多浏览器（包括 Internet Explorer）不能逐步呈现页面。一些浏览器会阻止渲染，以避免在页面样式发生变化时，重新绘制页面中的元素。这种做法可以防止呈现给用户空白的页面或没有样式的内容。</p>
+<p><strong>把<code>&lt;script&gt;</code>标签恰好放在<code>&lt;/body&gt;</code>之前</strong></p>
+<p>脚本在下载和执行期间会阻止 HTML 解析。把<code>&lt;script&gt;</code>标签放在底部，保证 HTML 首先完成解析，将页面尽早呈现给用户。</p>
+<p>例外情况是当你的脚本里包含<code>document.write()</code>时。但是现在，<code>document.write()</code>不推荐使用。同时，将<code>&lt;script&gt;</code>标签放在底部，意味着浏览器不能开始下载脚本，直到整个文档（document）被解析。也许，对此比较好的做法是，<code>&lt;script&gt;</code>使用<code>defer</code>属性，放在<code>&lt;head&gt;</code>中。</p>
+<h6 id="参考-7"><a href="#参考-7" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="https://developer.yahoo.com/performance/rules.html#css_top" target="_blank" rel="noopener">https://developer.yahoo.com/performance/rules.html#css_top</a></li>
+</ul>
+<h3 id="什么是渐进式渲染（progressive-rendering）？"><a href="#什么是渐进式渲染（progressive-rendering）？" class="headerlink" title="什么是渐进式渲染（progressive rendering）？"></a>什么是渐进式渲染（progressive rendering）？</h3><p>渐进式渲染是用于提高网页性能（尤其是提高用户感知的加载速度），以尽快呈现页面的技术。</p>
+<p>在以前互联网带宽较小的时期，这种技术更为普遍。如今，移动终端的盛行，而移动网络往往不稳定，渐进式渲染在现代前端开发中仍然有用武之地。</p>
+<p>一些举例：</p>
+<ul>
+<li>图片懒加载——页面上的图片不会一次性全部加载。当用户滚动页面到图片部分时，JavaScript 将加载并显示图像。</li>
+<li>确定显示内容的优先级（分层次渲染）——为了尽快将页面呈现给用户，页面只包含基本的最少量的 CSS、脚本和内容，然后可以使用延迟加载脚本或监听<code>DOMContentLoaded</code>/<code>load</code>事件加载其他资源和内容。</li>
+<li>异步加载 HTML 片段——当页面通过后台渲染时，把 HTML 拆分，通过异步请求，分块发送给浏览器。更多相关细节可以在<a href="http://www.ebaytechblog.com/2014/12/08/async-fragments-rediscovering-progressive-html-rendering-with-marko/" target="_blank" rel="noopener">这里</a>找到。</li>
+</ul>
+<h6 id="参考-8"><a href="#参考-8" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="https://stackoverflow.com/questions/33651166/what-is-progressive-rendering" target="_blank" rel="noopener">https://stackoverflow.com/questions/33651166/what-is-progressive-rendering</a></li>
+<li><a href="http://www.ebaytechblog.com/2014/12/08/async-fragments-rediscovering-progressive-html-rendering-with-marko/" target="_blank" rel="noopener">http://www.ebaytechblog.com/2014/12/08/async-fragments-rediscovering-progressive-html-rendering-with-marko/</a></li>
+</ul>
+<h3 id="为什么在-lt-img-gt-标签中使用srcset属性？请描述浏览器遇到该属性后的处理过程。"><a href="#为什么在-lt-img-gt-标签中使用srcset属性？请描述浏览器遇到该属性后的处理过程。" class="headerlink" title="为什么在&lt;img&gt;标签中使用srcset属性？请描述浏览器遇到该属性后的处理过程。"></a>为什么在<code>&lt;img&gt;</code>标签中使用<code>srcset</code>属性？请描述浏览器遇到该属性后的处理过程。</h3><p>因为需要设计响应式图片。我们可以使用两个新的属性——<code>srcset</code> 和 <code>sizes</code>——来提供更多额外的资源图像和提示，帮助浏览器选择正确的一个资源。</p>
+<p><strong>srcset</strong> 定义了我们允许浏览器选择的图像集，以及每个图像的大小。</p>
+<p><strong>sizes</strong> 定义了一组媒体条件（例如屏幕宽度）并且指明当某些媒体条件为真时，什么样的图片尺寸是最佳选择。</p>
+<p>所以，有了这些属性，浏览器会：</p>
+<ol>
+<li>查看设备宽度</li>
+<li>检查 sizes 列表中哪个媒体条件是第一个为真</li>
+<li>查看给予该媒体查询的槽大小</li>
+<li>加载 srcset 列表中引用的最接近所选的槽大小的图像</li>
+</ol>
+<h6 id="参考-9"><a href="#参考-9" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images</a></li>
+</ul>
+<h3 id="你有过使用不同模版语言的经历吗？"><a href="#你有过使用不同模版语言的经历吗？" class="headerlink" title="你有过使用不同模版语言的经历吗？"></a>你有过使用不同模版语言的经历吗？</h3><p>有过，比如 Pug （以前叫 Jade）、 ERB、 Slim、 Handlebars、 Jinja、 Liquid 等等。在我看来，这些模版语言大多是相似的，都提供了用于展示数据的内容替换和过滤器的功能。大部分模版引擎都支持自定义过滤器，以展示自定义格式的内容。</p>
+<h3 id="其它答案"><a href="#其它答案" class="headerlink" title="其它答案"></a>其它答案</h3><ul>
+<li><a href="https://neal.codes/blog/front-end-interview-questions-html/" target="_blank" rel="noopener">https://neal.codes/blog/front-end-interview-questions-html/</a></li>
+<li><a href="http://peterdoes.it/2015/12/03/a-personal-exercise-front-end-job-interview-questions-and-my-answers-all/" target="_blank" rel="noopener">http://peterdoes.it/2015/12/03/a-personal-exercise-front-end-job-interview-questions-and-my-answers-all/</a></li>
+</ul>
+<hr>
+
+                    
+                    <!-- Tags Bottom -->
+                    
+                        <div class="tags-container-bottom">
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/front-map/tags/html/">#html</a> <a class="fw3 ph1 dib" href="/front-map/tags/js/">#js</a> <a class="fw3 ph1 dib" href="/front-map/tags/css/">#css</a>
+                        </div>
+                    
+
+                    <!-- Comments -->
+                    
+
+
+
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+                    
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 1: About -->
+                    <div class="mt5 mt0-l">
+    <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
+        <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="John Doe">
+        </div>
+        <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
+            My name is Xiaolong Li and this is my blog.<br>I am a full stack software engineer with a strong front-end focus.<br> I currently live and work in Singapore, hit me up if you are in the region.
+        </div>
+    </article>
+</div>
+
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 2: Categories -->
+                    
+                        <div class="mt5 tc tl-l">
+    <h3>Categories</h3>
+    
+        <p>
+            <a href="/front-map/categories/前端/">前端</a>
+        </p>
+    
+</div>
+
+
+                        <hr class="dn-l mw4 black-50 mt5" />
+                    
+
+                    <!-- Widget 3: Recent Posts -->
+                    <div class="mt5 tc tl-l">
+    <h3>Recent Posts</h3>
+    
+        <p>
+            <a href="/front-map/2018/08/06/javascript-questions/">JS基础知识</a>
+        </p>
+    
+        <p>
+            <a href="/front-map/2018/08/06/html-questions/">Html基础知识</a>
+        </p>
+    
+        <p>
+            <a href="/front-map/2018/08/06/css-questions/">css基础知识</a>
+        </p>
+    
+        <p>
+            <a href="/front-map/2018/08/06/html-js-css-base/">前端基础知识</a>
+        </p>
+    
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://twitter.com/?lang=en" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://dribbble.com/" target="_blank">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://github.com/klugjo/hexo-theme-anodyne" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://plus.google.com/" target="_blank">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://www.behance.net/" target="_blank">
+                            <i class="fa fa-behance"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://500px.com/" target="_blank">
+                            <i class="fa fa-500px"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="mailto:test@example.com" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="/#" target="_blank">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                @Untitled. All right reserved | Design & Hexo <a class="link dim white" href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+            </div>
+        </div>
+    </div>
+
+<!-- After Footer -->
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
